@@ -77,7 +77,7 @@ const Sidebar = ({
               <Layers className="text-white" size={18} />
             </div>
             <span className="text-lg font-bold text-gray-900 dark:text-white">
-              TaskFlow
+              GIST
             </span>
           </Link>
           <button
