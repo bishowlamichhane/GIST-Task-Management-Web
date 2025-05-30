@@ -162,7 +162,7 @@ const Sidebar = ({
             </li>
             <li>
               <Link
-                to="/analytics"
+                to="/"
                 className={`flex items-center p-2 text-base font-normal rounded-lg ${
                   isActive("/analytics")
                     ? "bg-blue-100 text-blue-700 dark:bg-blue-700 dark:text-white"
@@ -179,7 +179,7 @@ const Sidebar = ({
             </li>
             <li>
               <Link
-                to="/team"
+                to="/"
                 className={`flex items-center p-2 text-base font-normal rounded-lg ${
                   isActive("/team")
                     ? "bg-blue-100 text-blue-700 dark:bg-blue-700 dark:text-white"
@@ -279,7 +279,7 @@ const Sidebar = ({
           </button>
 
           <Link
-            to="/settings"
+            to="/"
             className="flex items-center w-full p-2 text-base font-normal text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
             onClick={() => setIsSidebarOpen(false)}
           >

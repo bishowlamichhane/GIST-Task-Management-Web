@@ -28,7 +28,7 @@ const App = () => {
       <Router>
         <Routes>
           {/* Protected routes using the Layout */}
-          <Route element={loggedIn ? <Layout /> : <Navigate to="/login" />}>
+          <Route element={<Layout />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/calendar" element={<Calendar />} />
             <Route path="/tasks" element={<Tasks />} />
@@ -36,14 +36,15 @@ const App = () => {
           </Route>
 
           {/* Public routes */}
-          <Route
+          {/* <Route
             path="/login"
             element={loggedIn ? <Navigate to="/" /> : <Login />}
-          />
-          <Route
+          /> */}
+          {/* <Route
             path="/register"
             element={loggedIn ? <Navigate to="/" /> : <Register />}
           />
+           */}
         </Routes>
       </Router>
     </ThemeProvider>
